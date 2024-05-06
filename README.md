@@ -11,4 +11,5 @@ The study examines the role of sociopolitical pressure in wildfire suppression d
 
 # The structure of the repository
 build_all_data directory contains all the input and output data files as well as the scripts (mostly Python and R) building the data pipeline. You can find the documentation for all input files in the subdirectories.
+
 data_analysis directory contains the scripts that analyze and visualize the data.
