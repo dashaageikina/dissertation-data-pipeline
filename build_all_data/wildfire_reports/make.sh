@@ -10,9 +10,7 @@ the dataset on the wildfire reports
 #import KML file from https://hub.arcgis.com/datasets/d6f7ee6129e241cc9b6f75978e47128b/explore?showTable=true
 
 cd /main_project/build_all_data/wildfire_reports/code
-Rscript sitreps_cleaning.R
 Rscript ics209plus_prep.R
-Rscript merge_ics_and_sitreps.R
 
 #References:
 St. Denis, Lise A., Nathan P. Mietkiewicz, Karen C. Short, Mollie 
