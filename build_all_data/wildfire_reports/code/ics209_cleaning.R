@@ -13,7 +13,7 @@ library(tidyverse)
 library(geodata)
 
 rm(list=ls())
-path <- "main_project/build_all_data"
+path <- "sociopolitical-pressure-wildfires/build_all_data/wildfire_reports"
 sf_use_s2(FALSE)
 
 ###function checking the validity of multipolygons
@@ -28,7 +28,7 @@ ensure_multipolygons <- function(X) {
 
 ###upload the data
 url <- "https://figshare.com/ndownloader/files/20183699"
-input_path <- paste0(path,"/wildfire_reports/input/raw")
+input_path <- paste0(path,"/input/raw")
 download.file(url, paste0(input_path,"/ics209plus.zip"),mode="wb")
 setwd(input_path)
 unzip(paste0(input_path,"/ics209plus.zip"))
@@ -258,6 +258,6 @@ incidents <- merge(incidents,result,all.x=TRUE)
 
 #save spatial data
 incidents <- st_transform(incidents,crs=4269)
-st_write(incidents,dsn=paste0(path,"/build_wildfire_reports/output/incidents_spatial.gpkg"),append=FALSE)
-#save just csv data
-write.csv(st_set_geometry(incidents,NULL),paste0(path,"/build_wildfire_reports/output/incidents_nonspatial.csv"))
+st_write(incidents,dsn=paste0(path,"/output/incidents_spatial.gpkg"),append=FALSE)
+#save just csv data too
+write.csv(st_set_geometry(incidents,NULL),paste0(path,"/output/incidents_nonspatial.csv"))

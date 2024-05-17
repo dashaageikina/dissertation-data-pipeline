@@ -9,7 +9,7 @@ the dataset on the wildfire reports
 #2.zipcodes - GIS data with U.S. zipcodes:
 #import KML file from https://hub.arcgis.com/datasets/d6f7ee6129e241cc9b6f75978e47128b/explore?showTable=true
 
-cd /main_project/build_all_data/wildfire_reports/code
+cd /sociopolitical-pressure-wildfires/build_all_data/wildfire_reports/code
 Rscript ics209plus_prep.R
 
 #References:
