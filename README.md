@@ -1,16 +1,14 @@
-# main_project
+# Data Pipeline for a Job Market Paper - Daria (Dasha) Ageikina
 
 Title: The Effects of Sociopolitical Pressure on Wildfire Suppression Efforts in the U.S.: Evidence from 18,000 incidents
 
-Author: Daria Ageikina
-
 Supervised by: Pierre Mérel, Jamie Hansen-Lewis, Michael Springborn
 
-# Summary of the project:
-This is the first chapter of my dissertation. It examines the role of sociopolitical pressure in wildfire suppression decisions in the U.S. More specifically, it analyzes the effects of media coverage on wildfire suppression resource use, namely personnel and aircraft resources, between 1999 and 2014. The main challenge is to find the causal effect in contrast to a simple correlation. I use Instrumental Variable analysis to isolate the causal effect and find how media coverage contributes to wildfire suppression, keeping everything else equal. Key findings suggest that wildfires receiving more media coverage have more resources allocated to them, regardless of the actual threat level. This misallocation leads to inefficiencies in resource use and exacerbates future wildfire risks. The research contributes to the ongoing discourse on wildfire management and sociopolitical studies on media. It also highlights the need for optimal resource allocation during wildfire incidents, suggesting that a more nuanced understanding of media influence and public expectations is crucial for effective wildfire management.
+# Abstract
+Wildfires present an increasing threat to many parts of the United States due to climate change. This dissertation explores a range of challenges arising from this threat in economics and policy, identifying several areas that require attention in shaping the response to wildfires -- specifically, the role of sociopolitical pressure in fire suppression, population health impacts from wildfire smoke, and climate policy. The paper examines whether sociopolitical pressure, measured by the newspaper coverage of wildfires, affects the allocation of personnel and aerial resources during wildfire suppression. Using a rich dataset of wildfire events from the Incident Status Summary (ICS-209) reports between 1999 and 2014, the study identifies causal effects using (1) a comprehensive set of variables controlling for wildfire threat, (2) the exogenous variation in the publication of significant historical events occurring just before the discovery of the wildfires. The analysis reveals that increased newspaper coverage of wildfires leads to significantly higher personnel usage. The paper does not find a significant effect of newspaper coverage on aircraft usage.
 
 # The structure of the repository
-master.sh is the main script calling other scripts that first build the data and then analyze it.
+master.sh is the main script that puts all data together from start to finish, conducts econometric (causal inference) analysis, and provides data summary with data visualizations.
 
 build_all_data directory contains the scripts building the data pipeline. Each subdirectory has a shell script that also documents the data and provides instructions for downloading data if needed.
 
