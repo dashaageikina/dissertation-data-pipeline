@@ -1,6 +1,6 @@
 # The Effects of Sociopolitical Pressure on Wildfire Suppression Efforts in the U.S.: Evidence from 18,000 incidents
 
-Author: Daria Ageikina
+Author: Daria Ageikina, PhD (UC Davis)
 
 Supervised by: Pierre Mérel, Jamie Hansen-Lewis, Michael Springborn
 
